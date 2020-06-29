@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first page Title</title> <!--This will be displayed on the tab-->
+        <!--Adding CSS style to make the table look better, try commenting out the <script> element
+             section and check the table onthe web page-->
+        <style type="text/css">
+            table {
+                width: 80%;                
+            }   
+            table, th, td  {
+                border: 1px solid blue;
+                padding: 8px;
+                text-align: center;
+                border-collapse: collapse;
+            }   
+        
+            div {
+                background-color: red;
+            }
+
+            span {
+                background-color: yellow;
+            }
+        
+        </style>
+    </head>
+
+    <body> <!-- This is displayed on the web page-->
+        <h1>My first large heading </h1> <!--we have 6 heading tags h1 to h6. 
+                                            all these are block level element-->
+        <!--<p>, paragrapht element, this is a block level element-->
+        <!--"<br>" is the line break element-->
+        <!-- "<hr>" is the thematic break element-->
+        <!--"<em>" and "<i>" are formatting tag,used for italic representation -->
+        <!--<strong> and <b> tags are formating tag, used to bold teh letters-->
+        <!--<u> and <mark> elements, used to underline and highlighting-->
+        <!--<sup> and <sub> tags, Superscript and Subscript of the text-->
+        <!--<a>, anchor element is used for easy navigation on teh page, its requires href -->
+        <!-- <img src="" alt="" />source and alternative text needs to be defined.>-->
+        <!-- <table>, table element used to represent data-->
+        <!-- <ul>, <ol>,Web list or HTML list, are of 2 types:- Ordered or unordered <ul> list-->
+        <!--Block level and inline Elements.
+         (p, h1,h2,h3,h4,h5,h6, ol, ul, div, address, fieldset,form, table, etc) are block level elements.
+         (b, small, i, code, strong, img, sub, sup, button, input, label, select, textarea, etc..) are 
+         inline elements.
+		 important : height/width properties cannot be set for inline elements
+        -->
+        <!--<forms>, it needs atleast 2 attributes 'action' (tells the location) and 'method' (post, get)-->
+        <!--<Select> Element, used within the form area-->
+        <!--<textarea> Element, used to input multiple line of text-->
+        <!--<button> element creates the button the web page-->
+
+        <p><em>Hypertext Markup Language (HTML)</em> is the standard markup language for creating web pages and 
+            web applications. <br>With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of 
+            cornerstone technologies for the World Wide Web. <hr>Web browsers receive HTML documents 
+            from a <i>web server or from local storage and render </i>the documents into multimedia web 
+            pages. <br>HTML describes the structure of a web page semantically and originally included 
+            cues for the appearance of the document.
+        </p>
+        <hr>
+        <p><strong>HTML </strong>elements are the building blocks of <b>HTML</b> pages.<br> <u>With HTML constructs, 
+            images and other</u> objects such as interactive forms may be embedded into the 
+            rendered page. <mark>HTML provides a means</mark> to create structured documents by denoting
+            structural semantics for text such as headings, paragraphs, lists, links, 
+            quotes and other items. HTML elements are delineated by tags, written using 
+            angle brackets. Tags directly introduce content  into the page. Other tags provide 
+            information about document text and may include other tags as sub-elements. 
+            Browsers do not display the HTML tags, but use them to interpret the content of the page.
+        </p>
+        <hr>
+        <p> <!-- Superscript and Subscrit tag-->
+            My Birthday is on 1<sup>st</sup> Oct. <br>The chemical formula of water is H<sub>2</sub>O.
+        </p>
+        <hr>
+        <p> <!-- anchor tag-->
+            <a href="https://www.facebook.com/">take me to Facebook</a>
+        </p>
+        <hr> <!--anchor to target element in the same page-->
+            <a href="#somename">define anchor</a>
+            <section id="somename"></section>
+            <p>
+                combination of href with #name and target element with same ID is anchor to the target element
+            </p>
+        <hr>
+        <p> <!--image tag-->
+            <img src="https://www.google.com/logos/doodles/2018/thanksgiving-2018-5704051017646080.4-law.gif" alt="Google" />
+            <img src="Images/web_design2.jpg" alt="Web Design"/> <!--using image foldare location-->
+        </p>
+        <hr> <!-- Table element-->
+        <p>
+            <table> <!--Usd to create table-->
+                <thead> <!-- used to create table header row-->
+                    <tr> <!-- used to create table row-->
+                        <th>ID#</th> <!--used to create table header row content-->
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- used to create table body-->
+                    <tr> <!--used to create table row for data, seperate tag for each row-->
+                        <td>1</td> <!-- used to cerate table body data row-->
+                        <td>John</td>
+                        <td>Dow</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Lincon</td>
+                        <td>white</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kim</td>
+                        <td>Jonson</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <hr>
+        <p> <!-- Web list-->
+            <h2>Unordered list</h2>
+            <ul> <!-- used to create unordered list, it will be presented as Bullet points-->
+                <li>Second items</li> <!-- used to create items in in the list-->
+                <li>Third item</li>
+                <li>first item</li>
+            </ul>
+            <h2>Ordered list</h2>
+            <ol> <!-- used to create Ordered list, it will be presented as numbered points-->
+                <li>first item</li>
+                <li>Second items</li>
+                <li>Third item</li>                
+            </ol>            
+        </p>
+        <hr>
+        <p> <!-- Block level element starts with new line and takes the whole horizontal space-->
+            <div>p, h1,h2,h3,h4,h5,h6, ol, ul, div, address, fieldset,form, table, etc are block level tags.</div>
+            <!--Inlie elements dont consume the whole space-->
+            <span>b, small, i, code, strong, img, sub, sup, button, input, label, select, textarea, etc.. are inline tags.</span>
+
+        </p>
+        <hr> <hr>
+
+
+<p> <!-- form element-->
+
+<form action="" method="">
+                <input type="button" value="Button"/><br><br>
+                <input type="checkbox"/><br><br>
+                <input type="radio"/><br><br>
+                <input type="color"/><br><br>
+                <input type="date"/><br><br>
+                <input type="datetime-local"/><br><br>
+                <input type="email"/><br><br>
+                <input type="file"/><br><br> <!-- allows to browse file to upload-->
+                <input type="hidden"/><br><br> <!-- it is not visible in teh page, and used to send values to web browser-->
+                <input type="image"/><br><br>
+                <input type="month"/><br><br>
+                <input type="number"/><br><br>
+                <input type="password"/><br><br>
+                <input type="range"/><br><br>
+                <input type="reset" value="Reset"/><br><br> <!-- it is used to reset teh whole form value-->
+                <input type="search"/><br><br>
+                <input type="submit" value="Submit"/><br><br>
+                <input type="tel"/><br><br> <!-- used to fill telephone number-->
+                <input type="text"/><br><br>
+                <input type="time"/><br><br>
+                <input type="url"/><br><br>
+                <input type="week"/><br><br>
+
+<hr>
+<!--select element provides various options-->
+                <select name="fruits"> <!-- drop down-->>
+                    <option value="apples">Apples</option>
+                    <option value="bananas">Bananas</option>
+                    <option value="grapes">Grapes</option>
+                    <option value="oranges" selected>Oranges</option>
+
+                </select>
+
+                <select name="Vegetables" multiple> <!-- list, allows multiple selection-->
+                    <option value="spinach">Spinach</option>
+                    <option value="potato">Potato</option>
+                    <option value="tomato">Tomato</option>
+                    <option value="onion" >Onion</option>
+
+                </select>
+<hr>
+<!--Text area, provides input text area for multiple line input-->
+                <textarea rows="3" cols="40">This is simple example.</textarea>
+                <!-- rows attribute sets the width of the field-->
+                <!-- cols attribute sets the lendth of the field-->
+<hr>
+<!--Button-->
+
+            </form>
+
+        </p>
+    </body>
+</html>
+
+
+
+<!-- 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> 
+-->

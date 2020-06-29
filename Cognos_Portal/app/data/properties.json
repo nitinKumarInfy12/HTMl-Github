@@ -1,0 +1,758 @@
+﻿{
+	"config": [{
+		"cognosServer": "https://cognoswest.nike.com/ibmcognos/bi/",
+		"tableauServer": "https://tableau-enterprise.nike.com/#/site/PlanningProdSite",
+		"tm1Server": "https://tm1-sri-web-prd.edf.nike.net/tm1web/",
+		"supportEmail": "Lst-PL.Reporting.Support",
+		"emailSubject": "Question: Cognos 11 Support"
+		}],
+	"productTeam": [
+	{	"name": "Demand Planning",
+		"toggle": "yes",
+		"onDemandBtnLabel": "On Demand",
+		"starterBtnLabel": "BCL",
+		"tooltip": "Demand Planning",
+		"cognosServer": "https://cognoswest.nike.com",
+		"subGroup": [{
+			"name": "Demand Planning",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "11010C APO Demand Plan & Sales Order Query",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FDemand+Planning%2F11010C+APO+Demand+Plan+%26+Sales+Order+Query&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "11020C Demand Plan Exceptions",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FDemand+Planning%2F11020C+Demand+Plan+Exceptions&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "11021C Marketing Line Plan Exceptions",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FDemand+Planning%2F11021C+Marketing+Line+Plan+Exceptions&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "11040C Plug Code Maintenance Report",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FDemand+Planning%2F11040C+Plug+Code+Maintenance+Report&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "11072C DPIP Proposed Size Curve",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FDemand+Planning%2FDPIP+Proposed+Size+Curve%2F11072C+DPIP+Proposed+Size+Curve&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "11200C ES Proposed Size Curve Report",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FDemand+Planning%2F11200C+ES+Proposed+Size+Curve+Report&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Proposed Period Distribution Profile",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Proposed%20Period%20Distribution%20Profile%20NEW.pptx?d=w6b097ea55f37436698e60c4a7f46c435",
+			"reports": [{
+				"reportName": "11080C ES Proposed Period Distribution Profile",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FDemand+Planning%2FPeriod+Distribution+Profile%2F11080C+ES+Proposed+Period+Distribution+Profile&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "11085C ES Proposed Period Distribution Profile - Exception",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FDemand+Planning%2FPeriod+Distribution+Profile%2F11085C+ES+Proposed+Period+Distribution+Profile+-+Exception&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Master Data",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "18011C Size Grid",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FMaster+Data%2F18011C+Size+Grid&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "18012C Size Grid Exception",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FMaster+Data%2F18012C+Size+Grid+Exception&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Sales Order",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "15030C Standard Sales Order Period To Period Report",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSales+Orders%2F15030C+Standard+Sales+Order+Period+To+Period+Report&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "15110C AA Customer Service Level (Fill Rate) by Quantity",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSales+Orders%2F15110C+AA+Customer+Service+Level+(Fill+Rate)+by+Quantity&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "15115C AA Customer Service Level (Fill Rate) by Amount",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSales+Orders%2F15115C+AA+Customer+Service+Level+(Fill+Rate)+by+Amount&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Demand Forecasting",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "10040C AA Forecast Accuracy (MAPE) - Lead Time",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FDemand+Forecasting%2F10040C+AA+Forecast+Accuracy+(MAPE)+-+Lead+Time&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "10045C AA Forecast Accuracy (MAPE) - Snapshot",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FDemand+Forecasting%2F10045C+AA+Forecast+Accuracy+(MAPE)+-+Snapshot&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			}]
+		}],
+		"subGroupStarter": [{
+			"name": "Sales Order",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "15010C Standard Sales Order",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSales+Orders%2FStarter+Queries%2F15010C+Standard+Sales+Order&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "15011C Standard Sales Order Summary",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSales+Orders%2FStarter+Queries%2F15011C+Standard+Sales+Order+Summary&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "15012C Standard Sales Order Summary w/Size",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSales+Orders%2FStarter+Queries%2F15012C+Standard+Sales+Order+Summary+w%252FSize&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "15020C Standard Sales Order Cancellations Starter",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSales+Orders%2FStarter+Queries%2F15020C+Standard+Sales+Order+Cancellations+Starter&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "15021C Standard Sales Order Summary Cancellations",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSales+Orders%2FStarter+Queries%2F15021C+Standard+Sales+Order+Summary+Cancellations&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "Sales Order AA Ad-Hoc Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSales+Orders%2FSales+Order+AA+Ad-Hoc+Relational&amp;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Sales Order Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSales+Orders%2FSales+Order+Relational&amp;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Sales Order Summary Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSales+Orders%2FSales+Order+Summary+Relational&amp;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Sales Order Summary Sz Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSales+Orders%2FSales+Order+Summary+Sz+Relational&amp;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			}]
+		},
+		{
+			"name": "Demand Forecasting",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Demand Forecasting - Styl/Colr Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FDemand+Forecasting%2FDemand+Forecasting+-+Styl%252FColr+Relational&amp;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Demand Forecasting - Styl/Colr/Sz Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FDemand+Forecasting%2FDemand+Forecasting+-+Styl%252FColr%252FSz+Relational&amp;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Demand Forecasting - Styl/Colr/Sz/Key Cust Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FDemand+Forecasting%2FDemand+Forecasting+-+Styl%252FColr%252FSz%252FKey+Cust+Relational&amp;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			}]
+		},
+		{
+			"name": "Demand Planning",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Demand Planning - Snapshots Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FDemand+Planning%2FDemand+Planning+-+Snapshots+Relational&amp;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Demand Planning Exceptions Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FDemand+Planning%2FDemand+Planning+Exceptions+Relational&amp;;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Demand Planning Hybrid Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FDemand+Planning%2FDemand+Planning+Hybrid+Relational&amp;ui_a;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Demand Planning MLP Exceptions Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FDemand+Planning%2FDemand+Planning+MLP+Exceptions+Relational&;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Demand Planning Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FDemand+Planning%2FDemand+Planning+Relational&amp;ui_appbar=f;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Demand Planning - CGP Snapshots Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FDemand+Planning%2FDemand+Planning+-+CGP+Snapshots+Relational&amp;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;prompt=true&amp;action=edit"
+			}]
+		},
+		{
+			"name": "Master Data",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Size Grid Analysis Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FMaster+Data%2FSize+Grid+Analysis+Relational&amp;ui_appbar=fa;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			}]
+		}]
+	},
+	{	"name": "Inventory Planning",
+		"toggle": "yes",
+		"onDemandBtnLabel": "On Demand",
+		"starterBtnLabel": "BCL",
+		"tooltip": "Inventory Management/Inventory Planning and SRI",
+		"cognosServer": "https://cognoswest.nike.com",
+		"subGroup": [{
+			"name": "Master Data",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "18020C Vendor Master Partner Functionality",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FMaster+Data%2F18020C+Vendor+Master+Partner+Functionality&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "18030C Vendor Master Status by Company Code",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FMaster+Data%2F18030C+Vendor+Master+Status+by+Company+Code&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "18040C Vendor Master Payment Terms",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FMaster+Data%2F18040C+Vendor+Master+Payment+Terms&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "18050C Vendor Master by Company Code/Plant",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FMaster+Data%2F18050C+Vendor+Master+by+Company+Code%252FPlant&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Inventory Performance",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Inventory%20Performance%20NEW.pptx?d=w3d3169357d5b49b0a90d888a32d0f913",
+			"reports": [{
+				"reportName": "12215C ES SLT Inventory Performance Finished Goods at Plant",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FInventory+Planning%2F12215C+ES+SLT+Inventory+Performance+Finished+Goods+at+Plant&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "12216C ES SLT Inventory Performance Finished Goods at Factory",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FInventory+Planning%2F12216C+ES+SLT+Inventory+Performance+Finished+Goods+at+Factory&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "12217C ES SLT Inventory Performance Raw Materials at Factory",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FInventory+Planning%2F12217C+ES+SLT+Inventory+Performance+Raw+Materials+at+Factory&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Purchase Orders",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "14010C Standard Purchase Order",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FPurchase+Orders%2F14010C+Standard+Purchase+Order&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "14020C Purchase Order Item – Surcharge Visibility",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FPurchase+Orders%2FPO+Surcharge+Visibility%2F14020C+Purchase+Order+Item+%E2%80%93+Surcharge+Visibility&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "12250C ES FLT STR/PR/PO Variance Report",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FPurchase+Orders%2FSTR%252FPR%252FPO+Variance%2F12250C+ES+FLT+STR%252FPR%252FPO+Variance+Report&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "IP Buy Plan",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_IP%20and%20SP%20Buy%20Plan%20Reports%20NEW.pptx?d=w18c2d0c9cf824a9e8d66646e13c72c7d",
+			"reports": [{
+				"reportName": "12026C ES FLT IP Buy Plan by Style Color",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FBuy+Plan%2F12026C+ES+FLT+IP+Buy+Plan+by+Style+Color&amp;format=spreadsheetML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "12027C ES FLT Buy Plan by Size",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FBuy+Plan%2F12027C+ES+FLT+Buy+Plan+by+Size&amp;format=spreadsheetML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Direct Ship Exceptions",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Direct%20Ship%20Exceptions%20NEW.pptx?d=wfb914c4f3784422ca94399bfb052be47",
+			"reports": [{
+				"reportName": "12090C ES Direct Ship Exception Report by Plng Ctry/Plant",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FInventory+Planning%2FDirect+Ship+Exceptions%2F12090C+ES+Direct+Ship+Exception+Report+by+Plng+Ctry%252FPlant&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "12091C ES Direct Ship Exception Report by Product",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FInventory+Planning%2FDirect+Ship+Exceptions%2F12091C+ES+Direct+Ship+Exception+Report+by+Product&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "IP Booking Volatility",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "12240C IP Bookings Volatility",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FInventory+Planning%2FIP+Bookings+Volatility%2F12240C+IP+Bookings+Volatility&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Available to Promise",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "12270C ATP Report",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FInventory+Planning%2FATP+Report%2F12270C+ATP+Report&amp;format=spreadsheetML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Nike Inventory Exchange",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "NIX-Global Upload Template",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FInventory+Planning%2FNike+Inventory+Exchange%2FNIX-Global+Upload+Template&amp;format=spreadsheetML&amp;prompt=true&amp;action=run"
+			}]
+		}],
+		"subGroupStarter": [{
+			"name": "SRI",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "16030C SRI Inputs By Product/Plant",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSRI%2F16030C+SRI+Inputs+By+Product%252FPlant&action=edit"
+			},
+			{
+				"reportName": "16040C SRI Team and Licensed Inputs By Product",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSRI%2F16040C+SRI+Team+and+Licensed+Inputs+By+Product&action=edit"
+			},
+			{
+				"reportName": "SRI Monthly Inventory Movement -ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSRI%2FSRI+Monthly+Inventory+Movement+-ES+(Adhoc)+BCL&action=edit"
+			}]
+		},
+		{
+			"name": "Purchase Order",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Purchase Order Item",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPurchase+Orders%2FPurchase+Order+Item+-+(Adhoc)+BCL&amp;ui_a;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Purchase Orders Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPurchase+Orders%2FPurchase+Order+Relational+(Schedule+Line)+-+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Purchase Requisition Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPurchase+Orders%2FPurchase+Requisition+Relational&amp;ui_app;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			}]
+		},
+		{
+			"name": "Master Data",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Vendor Master - Company Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FDemand+Planning%2FDemand+Planning+-+Snapshots+Relational&amp;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Vendor Master - Purchasing Org Plant Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FMaster+Data%2FVendor+Master+-+Purchasing+Org+Plant+Relational&action=edit"
+			},
+			{
+				"reportName": "Vendor Master - Purchasing Org Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FMaster+Data%2FVendor+Master+-+Purchasing+Org+Relational&amp;;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			}]
+		}]
+	},
+	{	"name": "Materials Planning",
+		"toggle": "no",
+		"onDemandBtnLabel": "On Demand",
+		"starterBtnLabel": "BCL",
+		"tooltip": "Materials Planning",
+		"cognosServer": "https://cognoswest.nike.com",
+		"subGroup": [{
+			"name": "Materials Planning",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Materials%20Planning%20Reports%20NEW.pptx?d=wa23a12b2b3fe41b091245fd3168a2da0",
+			"reports": [{
+				"reportName": "17500C ES Material Capacity Utilization",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FMaterials+Planning%2F17500C+ES+Material+Capacity+Utilization&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17501C ES Material Plan",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FMaterials+Planning%2F17501C+ES+Material+Plan&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Variance",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Variance%20Reports%20MP%20NEW.pptx?d=w35a25ae9cfe643edb39206a45024ff72",
+			"reports": [{
+				"reportName": "17282C ES RM WIP/Replenishment Plan Variance at Factory",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FRM+WIP-Replenishment+Plan+Variance%2F17282C+ES+RM+WIP+%252F+Replenishment+Plan+Variance%E2%80%AC+at+Factory&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17283C ES RM Dependent Demand Variance Report at Factory",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FRM+Dependent+Demand+Variance%2F17283C+ES+RM+Dependent+Demand+Variance+Report+at+Factory&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Raw Material",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Raw%20Material%20NEW.pptx?d=wbc839da22eef4988b83337197747c1f5",
+			"reports": [{
+				"reportName": "17214C ES Supply Planning Raw Materials at Factory",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2F17214C+ES+Supply+Planning+Raw+Material+at+Factory&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17250C ES Apparel Raw Material Requirement Adjustment",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2F17250C+ES+Apparel+Raw+Material+Requirement+Adjustment&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			}]
+		}],
+		"subGroupStarter": []
+	},
+	{	"name": "Supply Planning",
+		"toggle": "yes",
+		"onDemandBtnLabel": "On Demand",
+		"starterBtnLabel": "BCL",
+		"tooltip": "Supply Planning",
+		"cognosServer": "https://cognoswest.nike.com",
+		"subGroup": [{
+			"name": "Supply Planning",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid%20Supply%20Planning%20Reports%20NEW.pptx?d=w6ff800116281436aaf2a4b327f031cc2",
+			"reports": [{
+				"reportName": "17211C ES Supply Planning by Capacity Type",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2F17211C+ES+Supply+Planning+by+Capacity+Type&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17212C ES SNP Inventory Planning",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2F17212C+ES+SNP+Inventory+Planning&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17213C ES Supply Planning Finished Goods at Factory",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2F17213C+ES+Supply+Planning+Finished+Goods+at+Factory&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17255C ES Finished Goods Factory Planned Production",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FFinished+Goods+Factory+Planned+Production%2F17255C+ES+Finished+Goods+Factory+Planned+Production&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Capacity Utilization",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid%20Capacity%20Utilization%20Reports%20NEW.pptx?d=we32d69178bdb4e499671e489ed323c13",
+			"reports": [{
+				"reportName": "17221C ES Capacity Utilization by Capacity Type",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FCapacity+Utilization%2F17221C+ES+Capacity+Utilization+by+Capacity+Type&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17222C ES Capacity Utilization by Prod Cd",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FCapacity+Utilization%2F17222C+ES+Capacity+Utilization+by+Prod+Cd&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17232C ES Capacity Utilization Aggregates",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FCapacity+Utilization%2F17232C+ES+Capacity+Utilization+Aggregates&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17229C ES Unplanned Demand by Capacity Constrained Quantity",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FCapacity+Utilization%2F17229C+ES+Unplanned+Demand+due+to+Cpty+Cnstrnt+by+Factory%252FCapacity+Type&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17256C ES Factory Capacity Detail",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FFactory+Capacity+Detail%2F17256C+ES+Factory+Capacity+Detail&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Comprehensive Unplanned (CUP)",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Comprehensive%20Unplanned%20CUP%20Reports%20NEW.pptx?d=w54ee622ff54a41cb980a26e3d9ad3a84",
+			"reports": [{
+				"reportName": "17236C ES Comparison of Unplanned to Total Demand Over Time",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FComprehensive+Unplanned%2F17236C+ES+Comparison+of+Unplanned+to+Total+Demand+Over+Time&format=HTML&prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17237C ES Comprehensive Unplanned Demand by Reason Summary",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FComprehensive+Unplanned%2F17237C+ES+Comprehensive+Unplanned+Demand+by+Reason+Summary&format=HTML&prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17238C ES Comprehensive Unplanned Demand by Reason Detail",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FComprehensive+Unplanned%2F17238C+ES+Comprehensive+Unplanned+Demand+by+Reason+Detail&format=HTML&prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Master Data Exceptions",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Master%20Data%20Exceptions%20NEW.pptx?d=w04c1d21297304864ae2b4b1beceafa93",
+			"reports": [{
+				"reportName": "17310C ES Unplanned due to Master Data Exceptions – Detail View",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FMaster+Data+Exception%2F17310C+ES+Unplanned+due+to+MD+Exceptions+-+Detail+View&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17311C ES Unplanned due to MD Exceptions - Compare Engine Runs Summary",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FMaster+Data+Exception%2F17311C+ES+Unplanned+due+to+MD+Exceptions+-+Compare+Engine+Runs+Summary&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17312C ES Unplanned due to MD Exceptions - CTM Compare",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FMaster+Data+Exception%2F17312C+ES+Unplanned+due+to+MD+Exceptions+-+CTM+Compare&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17313C ES Unplanned due to MD Exceptions - Demand Season by Version",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FMaster+Data+Exception%2F17313C+ES+Unplanned+due+to+MD+Exceptions+-+Demand+Season+by+Version&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Build Early/Build Late",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Build%20Early%20Build%20Late%20NEW.pptx?d=we8a468edeb164ae982f35824828b4118",
+			"reports": [{
+				"reportName": "17286C ES Build Early/Build Late Visibility Report",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FBuild+Early%252FBuild+Late+Visibility+Report%2F17286C+ES+Build+Early%252FBuild+Late+Visibility+Report&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17287C ES Build Early/Build Late Visibility Report (Detail)",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FBuild+Early%252FBuild+Late+Visibility+Report%2F17287C+ES+Build+Early%252FBuild+Late+Visibility+Report+(Detail)+Drill+Down&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Variance",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Variance%20Reports%20IP-SP%20NEW.pptx?d=w97137e6370ed4ebf89d906f6554ac798",
+			"reports": [{
+				"reportName": "17280C ES FG WIP/Production Plan Variance",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FFG+WIP-Prod+Plan+Variance%2F17280C-ES+FG+WIP%252FProduction+Plan+Variance+Report+at+Factory&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+				"reportName": "17281C ES FG Distribution Demand Variance",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FFG+Distribution+Demand+Variance%2F17281C+ES+FG+Distribution+Demand+Variance&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Minimums Exceptions",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Minimums%20Exceptions%20NEW.pptx?d=wa02eddaac3224aadbdf6b3776f65441f",
+			"reports": [{
+				"reportName": "17240C ES Unplanned Demand by Minimums",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FFinished+Good+Minimums%E2%80%AC%2F17240C+ES+Unplanned+Demand+By+Minimums&amp;format=HTML&amp;prompt=true&amp;action=run"
+			},
+			{
+
+				"reportName": "17241C Buy Alignment",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FFinished+Good+Minimums%E2%80%AC%2F17241C+Buy+Alignment&format=HTML&prompt=true&action=run"
+			}]
+		},
+		{
+			"name": "Seasonal Source Plan",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid%20Seasonal%20Source%20Plan%20Report%20NEW.pptx?d=w8bfb04b5f4f3461c8bbc57f0aa34eb84",
+			"reports": [{
+				"reportName": "17300C ES Seasonal Sourcing Plan",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FSourcing+Exception%2F17300C+ES+Seasonal+Sourcing+Plan&amp;format=HTML&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Prebuild Analysis",
+                       "icon": "cognos",
+                       "jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_Prebuild_Analysis_Report.pptx?d=wa39bcf7d1146455db25cedf202fc0022",
+                       "reports": [{
+                       "reportName": "17219C ES Finished Goods Prebuild Analysis",
+                       "reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FFinished+Goods+Prebuild+Analysis%2F17219C+ES+Finished+Goods+Prebuild+Analysis&format=spreadsheetML&prompt=true&action=run"
+                       
+			}]
+		},
+		{
+			"name": "SP Buy Plan",
+			"icon": "cognos",
+			"jobAid": "https://nike.sharepoint.com/sites/projects/globalscp/Training%20Materials/Report_Job%20Aid_IP%20and%20SP%20Buy%20Plan%20Reports%20NEW.pptx?d=w18c2d0c9cf824a9e8d66646e13c72c7d",
+			"reports": [{
+				"reportName": "17239C ES FLT SP Buy Plan by Style Color",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FSupply+Planning%2FBuy+Plan%2F17239C+ES+FLT+SP+Buy+Plan+by+Style+Color&amp;format=spreadsheetML&amp;prompt=true&amp;action=run"
+			}]
+		}],
+		"subGroupStarter": [{
+			"name": "Supply Planning",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Capacity Utilization by Capacity Type – ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FCapacity+Utilization+by+Capacity+Type+%E2%80%93+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Capacity Utilization by Product – ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FCapacity+Utilization+by+Product+%E2%80%93+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Comprehensive Unplanned Demand - Detail - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FComprehensive+Unplanned+Demand+-+Detail+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Factory Capacity Detail - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FFactory+Capacity+Detail+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Finished Goods Buy Plan - Size - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FFinished+Goods+Buy+Plan+-+Size+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Finished Goods Factory Planned Production - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FFinished+Goods+Factory+Planned+Production+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Finished Goods Minimums Exception - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FFinished+Goods+Minimums+Exception+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Master Data Exception - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FMaster+Data+Exception+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Supply Planning Finished Goods at Factory - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FSupply+Planning+Finished+Goods+at+Factory+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Supply Planning Finished Goods at Factory w/ ABP Attr - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FSupply+Planning+Finished+Goods+at+Factory+w%252F+ABP+Attr+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Supply Planning Finished Goods at Plant - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FSupply+Planning+Finished+Goods+at+Plant+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Supply Planning Finished Goods at Plant w/ ABP Attr - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FSupply+Planning+Finished+Goods+at+Plant+w%252F+ABP+Attr+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Supply Planning Raw Materials at Factory - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FSupply+Planning%2FSupply+Planning+Raw+Materials+at+Factory+-+ES+(Adhoc)+BCL&action=edit"
+			}]
+		},
+		{
+			"name": "Materials Plannings",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Material Item Forecast - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FMaterials+Planning%2FMaterial+Item+Forecast+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Material Plan - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FMaterials+Planning%2FMaterial+Plan+-+ES+(Adhoc)+BCL&amp;ui_a;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			},
+			{
+				"reportName": "Material Plan w/ Extended Attributes - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FMaterials+Planning%2FMaterial+Plan+w%252F+Extended+Attributes+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Material Vendor Capacity - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FMaterials+Planning%2FMaterial+Vendor+Capacity+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "Materials BOM - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FMaterials+Planning%2FMaterials+BOM+-+ES+(Adhoc)+BCL&amp;ui_a;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			}]
+		},
+		{
+			"name": "Planning Master Data",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "PMD Factory Calendar (ES) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPMD-Planning+Master+Data%2FPMD+Factory+by+Capacity+Type+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "PMD Factory by Capacity Type - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPMD-Planning+Master+Data%2FPMD+Factory+by+Capacity+Type+by+Week+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "PMD Factory by Capacity Type by Week - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPMD-Planning+Master+Data%2FPMD+Factory+Calendar+(ES)+BCL&action=edit"
+			},
+			{
+				"reportName": "PMD Factory Sourcing Rule (ES) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPMD-Planning+Master+Data%2FPMD+Factory+Sourcing+Rule+(ES)+BCL&action=edit"
+			},
+			{
+				"reportName": "PMD Product Factory by Capacity Type by Week - ES (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPMD-Planning+Master+Data%2FPMD+Product+Factory+by+Capacity+Type+by+Week+-+ES+(Adhoc)+BCL&action=edit"
+			},
+			{
+				"reportName": "PMD Raw Materials (ES) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPMD-Planning+Master+Data%2FPMD+Raw+Materials+(ES)+BCL&action=edit"
+			}]
+		},
+		{
+			"name": "Master Data",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Material Master Relational",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FMaster+Data%2FMaterial+Master+Relational&amp;ui_appbar=false;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			}]
+		}]
+	},
+	{	"name": "Performance Management",
+		"toggle": "no",
+		"onDemandBtnLabel": "Cognos",
+		"starterBtnLabel": "Tableau",
+		"tooltip": "Performance Management",
+		"cognosServer": "https://cognoswest.nike.com",
+		"subGroup": [{
+			"name": "Info Attack",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Flow Metrics Portal Page",
+				"reportPath": "/ibmcognos/bi/v1/disp?b_action=cognosViewer&ui.action=view&ui.object=defaultOutput(%2fcontent%2ffolder%5b%40name%3d%27Integrated%20Planning%20Root%27%5d%2ffolder%5b%40name%3d%27Integrated%20Planning%20-%20Production%20Support%27%5d%2ffolder%5b%40name%3d%27Integrated%20Planning%20-%20Portal%20Pages%27%5d%2freportView%5b%40name%3d%27Flow%20Metric%20Portal%20Page%27%5d)&ui.name=Flow%20Metric%20Portal%20Page&ui.format=HTML"
+			}]
+		},
+		{
+			"name": "FOTP",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "14030C ES Factory On Time Performance Reporting",
+				"reportPath": "/ibmcognos/bi/?pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FPurchase+Orders%2FFOTP%2F14030C+ES+Factory+On+Time+Performance+Reporting&amp;format=HTML&amp;a11y=true&amp;prompt=true&amp;action=run"
+			}]
+		},
+		{
+			"name": "Tableau",
+			"icon": "tableau",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Factory On Time Performance Dashboard",
+				"reportPath": "FactoryOnTimePerformance/EXECUTIVEFACTORYOTPDASHBOARD"
+			},
+			{
+				"reportName": "Demand Supply Match",
+				"reportPath": "DemandSupplyMatchbyCRDMonth/Overview"
+			},
+			{
+				"reportName": "Blind Buy Analysis Dashboard",
+				"reportPath": "BlindBuyAnalysisDashboard/BuyPlanOverview-STRsOnly"
+			},
+			{
+				"reportName": "Manual PO Governance",
+				"reportPath": "ManualPO_Governance_Report/Overview"
+			},
+			{
+				"reportName":"PDP Scenario and Modeling",
+				"reportPath":"PDPScenarioandModeling_0/PDPScenarioModeling"
+			}]
+		}],
+		"subGroupStarter": [{
+			"name": "Performance Metrics",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Seasonal Blind Buy Report - Starter Query",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPerformance+Metrics%2FSeasonal+Blind+Buy+Report+-+Starter+Qu;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			}]
+		},
+		{
+			"name": "FOTP",
+			"icon": "cognos",
+			"jobAid": "",
+			"reports": [{
+				"reportName": "Factory On Time Performance - (Adhoc) BCL",
+				"reportPath": "/ibmcognos/bi/?perspective=authoring&pathRef=.public_folders%2FIntegrated+Planning+Root%2FIntegrated+Planning%2FManaged+Reports%2FBCL%2FPurchase+Orders%2FFactory+On+Time+Performance+-+(Adhoc)+BCL&;ui_appbar=true&amp;ui_navbar=true&amp;format=HTML&amp;a11y=true&amp;action=edit"
+			}]
+		}]
+	}]
+}

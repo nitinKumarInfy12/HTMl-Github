@@ -1,0 +1,210 @@
+=>good website for prebuilt styles
+https://semantic-ui.com/
+ to use it
+ serach in google "semantic ui cdn" and go to "https://cdnjs.com/libraries/semantic-ui"
+ 
+ then scrol down and copy "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+	use it in index.html
+
+=>shift + alt + f  // to indent the code in VS
+
+=====================================================
+CSS : cascading style sheets
+CSS tab used in 3 ways: inline , internal , external.
+inline : in the same element tag. Only affect the particular element
+internal : define the style in head section using <style></style> tag. Affects the current document.
+external : create an external stylesheet. file is linked using the <link> tag
+
+=> CSS browser prefixes. also can be done by autoprefixer plugin
+Chrome, Safari, Android, IOS : -webkit-
+firefox : -moz-
+internet Exp : -ms-
+Opera : -o-
+example  border-radius: 25px; => -ms-bordeer-radius ; 25px;
+
+=> media query : @media only screen and (max-width:) { }
+Standard Widths : 480px, 767px, 1023px, 1200px
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+short methods for CSS styles: 
+Border : <width> <style> <color> 
+padding : <top> <right> <bottom> <left>, or <top> <left-right> <bottom>, or <top-bottom> <left-right>
+margin : <top> <right> <bottom> <left>, or <top> <left-right> <bottom>
+
+
+=> cursor:pointer to enable cursor
+
+
+h1 {
+    font-family: helvetica Neue, Arial; /*use second if first is not available*/
+    color: #fd9644;
+    background-image: url(Base%20Colors.jpg)
+}
+
+=>Floating property
+float : left / right / none
+
+=> Flex
+display:flex; on the parent
+
+Flex: flex-grow, flex-shrink, flex-basis ; on the flex items child
+
+=> z-index: 9999; keeps the element on the top of vertical stack
+
+=> Special characters start with & in HTML
+
+=> ionicons for external icons
+
+Font of the characters, use font-family property
+font-family : <type of the font>
+font-size : <size of the font> (xx-small, x-small, small, medium, large, x-large, xx-large, customized )
+font-style : <normal/italic/oblique etc> there are 6 types of font styles
+font-weight : text or number, 100-thin, 200 - extra light, 300-light, 400-normal, 500-medium, 600-semi bold, 700-bold, 800-extra bold, 900-ultra bold. 
+text-align : specifies the alignment top,right, bottom,left, justify are the values
+
+=> Ingredients to responsive web design : Fluid grid, flexible images, media query
+
+=> list-style : none property to disable the list style of teh ordered/unordered list
+
+<link rel="stylesheet" type="text/css" href="style.css"> 
+
+========= Style =====================
+
+=> text-decoration : none; we can use in anchor tag to remove the under line
+
+h1 {
+    font-family: helvetica Neue, Arial; /*use second if first is not available*/
+    text-rendering: optimizeLegibility;
+    height: 100vh; /*vh means view port. it says 100% view port of the window*/
+    background-image:linear-gradient(#000, #000), url(Base%20Colors.jpg); /* blurs the image by addind gradient*/
+    background-size: cover; /*it makes the browser to use actual image than zoomed in*/
+    background-position: center;
+    background-attachment: fixed; /*Image feels like staying same place while scrolling*/
+}
+
+Colors : RGB model => #RRGGBB {0 (hex 0) is lowest and 255(hex ff) is highest} ex : #1da717 is green
+        :rgba() adds transparency , write it without #hexadecimal. example above green color with transparency => rgba(29,167,23, 0.75) gives 75% transparency
+gray color : mix rgb with same value. ex #ddd (clink ctrl + e for color picker, hover over color in style.css and click color picker ctrl+e)
+
+
+for  Style use as :
+* for global Styling.
+Elements name for element level style (h1, p, body).
+.class name for class level styling.
+#ID for ID specific styling.
+
+
+=>use comma to aply same style on multiple objects. ex: h1, p {}
+=>grouping parent child objects, no need to use comma: to specify style for that particular child element (.author-box img)
+=>div[class="third-selector"]  to apply a style to a particular class of an element
+
+
+Box model : 
+content : content of the box
+padding : transparent area around the content inside the box, space between content and border
+border : goes around teh padding and teh content (heingh and width includes padding). ((content+padding+height/width + border) + margin ) = box
+margin : spaces between the boxes
+
+{box-sizing : border-box} height and width can be defined for an entire box rather just for the content
+ex=>
+
+* {
+    margin :0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+=====<div> : divide =======
+align the div block in center
+
+div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+=>float : left element can be pushed left or right allowing other elements to wrap around it. first comes left and then second around first
+
+add empty <div> with clearfix class to overcome teh effect of float on unwanted div element.
+=> clear property: to counter the float for unwanted elements.
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+=> Content property is must for after class.
+=> after indicates that after clearfix clas it will appear.
+
+======================================================================================================================================
+note: use float : left/right to bring elemnts next to each other. this can also be doen by using display: inline.
+	but if using display: inline, width/height cannot be changed for teh elements, but if using float: left/right, size can be changed.
+	width/height cannot be changed for inline elements, remeber.
+======================================================================================================================================
+
+
+=>border-radius : property to circle or change the shape
+
+=>input[type=checbox] to style the particular input type in the form
+
+=> *:focus {outline: none;} to diusable the focus highlight when selected or hover
+
+pseudo class
+=>btn:link, btn:visited; it means btn in the normal state and in the clicked state.
+=>btn:hover, btn:active
+
+=> transition : background-color 0.2s, border 0.2s, color 0.2s; this will add the transition effect
+
+=> opacity property to dull the image using bacground color
+
+=> element with absolute position can be placed anywhere within parent positiones as relative.
+=> Absolute positioning : position property of the parent should be set to relative and child`s position property should be set to absolute.
+parent element {position: relative}
+child element {position: absolute}
+
+parent-element {
+	position: relative;
+}
+
+child-element{
+	position: absolute;
+	top: 10 px;
+	right : 10px
+}
+
+=> display property: block, inline, table, none, grid
+
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));    
+    grid-gap: 10px;
+    grid-auto-rows: 200px;
+}
+
+
+=>Vertical center alignment
+{   top: 50%
+    transform : translate(-50%)}
+
+=> horizontal center alignment
+margin : 0 auto 0 auto or 0 auto
+
+or {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+=> center alignment {
+    top: 50%;
+    left: 50;
+    transform: translate(-50%, -50%)
+}
+
+
+div[class="third-selector"] {
+    background-color: yellow
+    }
+
+
+External CSS
+1. normalize.css

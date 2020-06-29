@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: segoe-ui_light, Segoe UI Light, Segoe WP, Helvetica Newe, Helvetica, sans-serif;
+    color: #526573;
+}
+
+header {
+    background-color: skyblue; 
+    font-family: segoe-ui_light, Segoe UI Light, Segoe WP, Helvetica Newe, Helvetica, sans-serif;
+    color: white;    
+    font-size: 25px;    
+    margin: 0;
+    padding: 0px 0px;
+    height: 60px;
+}
+
+ul {
+        list-style: none;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+
+ul li {
+        margin-top: 5px;
+        width: 50%;
+        float: left;
+    }
+
+li .logo {
+    margin-left: 10px;
+    width: 50px;
+    height: 48px;
+    background: url(../images/logo4.png) center center no-repeat;
+}
+
+li .phone {
+     float: right;
+     /* background-color: yellow;
+     border: 1px solid red; */
+     margin-right: 10px; 
+     /* margin-top: 1px; */
+}
+
+.phone .icon {
+    float: left;
+    width: 50px;
+    height: 48px;
+    background: url(../images/telepohone-icon3.png) center center no-repeat; 
+    /* border: 1px solid red; */
+}
+
+.phone .text {
+     /* display: inline-block;  */
+     margin-top: 11px; 
+    margin-top: 4px;
+     font-size: 17px; 
+}
+
+
+.phone-number {
+    float: right;
+    color: white;
+}
+
+.phone-number .icon {
+    float: left;
+    background: url(../images/telepohone-icon2.png) center center no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;    
+}
+
+
+h1 {
+    font-size: 30px;
+    margin: 80px 0 60px 0;
+    text-align: center;
+} 
+
+p {
+    /* font-size: 30px;
+    margin: 80px 0 60px 0; */
+    text-align: center;
+} 
+
+.blue {
+    color: skyblue;
+}
+
+
+li .button {
+    float: center;
+    color: skyblue;
+    border: 1px solid skyblue;
+    height: 40px;
+    width: 130px;
+    margin-left: 80px;
+
+}
+
+section ul li .box1 {
+    width: 49.5%;  
+    float: right;
+}
+
+section ul li .box2 {
+    width: 49.5%;  
+    float: center;
+}
+
+
+.verticalline {
+    border-left : 1px solid skyblue;
+    height: 100px;
+    margin-top: 120px; 
+    
+}
+/* .verticalline, .box2 {
+    display: inline;
+       
+} */
+
+.verticalline, .box1, .box2 {
+    float: left;
+
+}
+

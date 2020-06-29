@@ -1,0 +1,74 @@
+<!--
+    CSS : stand for Cascading Style sheets language
+    it helps to define the font size, colors, borders, 
+    background images/colors, position of the HTML elemets etc.
+
+    It will allow you to fully control the look and feel of your web page
+
+    Ruleset :
+    it contains a "selector"<element> and "declaration" {} block.
+    <element> {property: value;}
+
+    CSS application methods:
+    1. Inline CSS styles :- only affect the particular element
+    2. Internal style sheet :- defined in teh head section and will affect the current document
+    3. External style sheet :- seperate css file that can be libnked to single/multiple web pages.
+       for this a <link> object needs to be created to link the web page to style sheet
+-->
+<!DOCTYPE html>
+<html>
+<head>
+        <title>My first page Title</title>
+        <style type="text/css">
+            p {  /*this is defining style for paragraph element*/
+                color: blue;
+            }
+        
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <!--rel attribute defines relation between the web page and stylesheet-->
+
+
+</head>
+<body>
+    <hr>
+    <h1 style="color: green">This is styled usiong the methos of Inline CSS style</h1>
+    <hr>
+    <p>This is styled using the method of Internal stylesheet</p>
+    <hr>
+    <div>This is styled using the method of External Stylesheet</div>
+
+    <!-- This on applying the style both from the DIV and class from the external style sheet-->
+    <div class="frst-selector">This is styled using the class method of External Stylesheet</div>
+
+    <!-- This on applying the style from ID an doverwriting the DIV style the external style sheet-->
+    <div id="secondSelector" >This is styled using the ID method of External Stylesheet</div>
+
+    <!-- This on applying the style both from the DIV and class from the external style sheet-->
+    <div class="third-selector">This is styled using the thirsd selector class method of External Stylesheet</div>
+
+    <!--CSS property - values-->
+    <span>hello, this is an SPAN Element BLOCK DISPLAY type</span>    
+    <span>hello, this is an SPAN Element BLOCK DISPLAY type</span>
+
+    <span id ="inlineSelector">hello, this is an SPAN Element BLOCK DISPLAY type</span>
+    <span id ="inlineSelector">hello, this is an SPAN Element BLOCK DISPLAY type</span>
+    <span id ="inlineSelector">hello, this is an SPAN Element BLOCK DISPLAY type</span>
+
+    <!-- div is a block level element, it consumes the whole horizontal space. so make it inline element div can be used with Inline or inline-block display type-->
+    <div>This is DIV element without the Inline Display type</div>
+    <div>This is DIV element without the Inline Display type</div>
+    <div>This is DIV element without the Inline Display type</div>
+
+    <div id="inlineConvertor">This is DIV element with the Inline Display type</div>
+    <div id="inlineConvertor">This is DIV element with the Inline Display type</div>
+    <div id="inlineConvertor">This is DIV element with the Inline Display type</div>
+<hr>
+    <!--none display type hides the content from the dispaly on web page-->
+    <h2>1st line of h2 without NONE display type</h2>
+    <h2 id="noneDisplay">2nd line of h2 with NONE display type</h2>
+    <h2>3rd line of h2 without NONE display type</h2>
+<hr>
+</body>
+</html>

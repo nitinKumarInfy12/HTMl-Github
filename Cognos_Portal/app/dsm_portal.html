@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<base></base>
+		<meta charset="utf-8" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<title>DSM BI&A Portal</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+ 		<!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css" /> -->
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/animate.css" />
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+	</head>
+	<body style="background-color:#e0e0e0">
+	<header>
+		<div class="fixed-announcement" style="display:none;">
+			<div class="announcement">
+				<div class="container">
+					Internet Explorer and Microsoft Edge users may face some formatting issues. For best experience use Chrome, Firefox or Safari.
+				</div>
+			</div>
+		</div>
+		<ul id="slide-out" class="side-nav" style="padding-top:100px;transform: translateX(0%);">
+		  <li>
+			<a class='myanchor' href='#' style="font-size:20px; !Important; text-transform: uppercase;">Welcome</a>
+		  </li>
+		</ul>
+		<div style="background-color:#ff4a29;height:84px;">
+		<div  id="modal_search" class="modal">
+			<div class="modal-content">
+				<div class="input-field">
+					<i class="material-icons prefix">search</i>
+					<input type="text" id="autocomplete-input" class="autocomplete">
+					<label for="autocomplete-input">Report Name or Number</label>
+				</div>
+			</div>
+		</div>
+		<div id="modal_notifications" class="modal">
+			<div class="modal-content">
+				<div>
+					<ul id="notificationsList"></ul>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar-fixed"  style="background-color:#555;margin-bottom:20px;">
+		<div class="nav-wrapper">
+				<a href="#"><img id="logo" class="brand-logo"/></a>
+				<a href="#" data-activates="slide-out" class=" valign-wrapper button-collapse hide-on-large-only right"><i style="font-size:64px;" class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="right text-white hide-on-med-and-down">
+					<li>
+						<a id="Welcome_tab" class='myanchor tooltipped' data-position='bottom' data-delay='50' data-tooltip='Welcome' href='#' style="padding-left:5px;padding-right:5px;">Welcome</a>
+					</li>
+				</ul>
+		</div>
+		</nav>
+		</div>
+	</header>
+		<!-- Tab_Content -->
+		<!-- Welcome_Block -->
+		<div id="modal_snop_security" class="modal">
+			<div class="modal-content">
+				<div>
+					<h5>S&amp;OP PORTAL ROLES</h5>
+					<ul>
+						<li><b>Cognos: </b>Application.CognosBI.Prod.OFS.Strategic.Analyst</li><br>
+						<li><b>Teradata: </b>Application.Teradata.Prod.OFS_Global_Display</li><br>
+						<li>Link for help: <a class='help_link' target='_blank' href="http://sharepoint/got/vc2015/info_attack/Training%20Materials/Getting%20Started/Requesting%20Access%20to%20InfoAttack%20Metrics%20through%20CUP.docx"> Getting Set Up</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="modal_cognos_security" class="modal">
+			<div class="modal-content">
+				<div>
+					<h5>PLANNING BI&amp;A PORTAL ROLES</h5>
+					<ul>
+						<li><b>Cognos: </b>Application.CognosBI.Prod.Planning.Global.Analyst</li><br>
+						<li><b>Teradata: </b>Application.Teradata.Prod.PLN_DISPLAY</li><br>
+						<li>Link for help: <a class='help_link' target='_blank' href="http://nikepedia/wiki/images/f/f8/HowToRequestCognosTerdataAccessthroughCUP.zip"> Cognos and Teradata Setup Instructions</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="modal_tableau_security" class="modal">
+			<div class="modal-content">
+				<div>
+					<h5>TABLEAU SERVER ROLES</h5>
+					<ul>
+						<li><b>Tableau Server: </b>Application.Tableau.Prod.Planning.IPS.Interactor.Interactor</li><br>
+						<li>Link for help: <a class='help_link' target='_blank' href="https://nike.sharepoint.com/sites/projects/globalscp/_layouts/15/WopiFrame.aspx?sourcedoc=%7bA68FB5C0-2AD6-445C-BDB7-8C7E2B239A48%7d&file=TableauRoles_JobAid.docx&action=default"> TableauRoles_JobAid</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="Welcome" class='nav-content'>
+			<div class="card hoverable large">
+			<!-- <a class="btn-large btn-floating halfway-fab right white-text waves-effect waves-light red" href="mailto:Lst-PL.Reporting.Support?subject=BInA Portal Support"><i class="material-icons">email</i></a> -->
+				<div class="row" style="min-height:100%;">
+					<div class="col m12 l6 left valign-wrapper" style="min-height:100%; height:100%;">
+						<div class="card-content">
+							<div class="row">
+								<div class="col s4">
+									<a id="SnOP" class='black-text' target='_blank'>S&amp;OP Portal</a>
+								</div>
+								<div class="col s8">
+									<p>S&amp;OP Portal screen to access additional reports. Security access is required. <a class='modal-trigger help_link' id='snop_security' href='#modal_snop_security'>Click here</a> for details.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s4">
+									<a id="eCognos" class='black-text' target='_blank'>Enterprise Cognos</a>
+								</div>
+								<div class="col s8">
+									<p>Access to Enterprise Cognos site. Security access is required. <a class='modal-trigger help_link' id='cognos_security' href='#modal_cognos_security'>Click here</a> for details.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s4">
+									<a id="eTableau" class='black-text' target='_blank'>Enterprise Tableau</a>
+								</div>
+								<div class="col s8">
+									<p>Access to Enterprise Tableau site. Security access is required. <a class='modal-trigger help_link' id='tableau_security' href='#modal_tableau_security'>Click here</a> for details.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s4">
+									<a id='tm1Link' class='black-text' target='_blank'>SRI Application</a>
+								</div>
+								<div class="col s8">
+									<p>Access to the SRI Application. SRI Security access is required.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s4">
+									<a class='black-text' href='http://nikepedia/wiki/index.php/Planning_Data_Tutorials' target='_blank'>Planning
+									Data Tutorials</a>
+								</div>
+								<div class="col s8">
+									<p>Link to Information on using BCL Packages</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s4">
+									<a class='black-text' href='https://www.nikeconnect.com/irj/portal' target='_blank'>nike Connect</a>
+								</div>
+								<div class="col s8">
+									<p>Access to the Vendor &amp; Factory Burst Reports and other nike Connect solutions.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s4">
+									<a class='black-text' href='http://bizglossary.nike.com/index' target='_blank'>Business Glossary</a>
+								</div>
+								<div class="col s8">
+									<p>Nike Business Glossary</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col l6 right hide-on-med-and-down" style="min-height:100%; height:100%;padding-right:0px;">
+						<div class="card-image right">
+							<img id="welcome" class="right" style="height:100%;"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-grid"></div>
+		<!-- Compiled and minified JavaScript -->
+		<script src="./js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	</body>
+</html>

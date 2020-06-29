@@ -1,0 +1,71 @@
+/*
+short methods for CSS styles: 
+Border : <width> <style> <color> 
+padding : <top> <right> <bottom> <left>, or <top> <left-right> <bottom>, or <top-bottom> <left-right>
+margin : <top> <right> <bottom> <left>, or <top> <left-right> <bottom>
+*/
+
+/*
+Floating property
+float : left / right / none
+*/
+
+/*
+Font of the characters, use font-family property
+font-family : <type of the font>
+font-size : <size of the font> (xx-small, x-small, small, medium, large, x-large, xx-large, customized )
+font-style : <normal/italic/oblique etc> there are 6 types of font styles
+font-weight : text or number, 100-thin, 200 - extra light, 300-light, 400-normal, 50-medium, 600-semi bold, 700-bold, 800-extra bold, 900-ultra bold. 
+text-align : specifies the alignment top,right, bottom,left are the values
+*/
+
+
+div {
+    color: brown;
+    background-color: yellowgreen; 
+    }
+
+/* "." defines the object as class*/
+.frst-selector {
+    font-size: 50px;
+}
+/*There are multiple options to use size:- px, ,rem, em, %. Each elements can use different property*/
+
+/*# symbol is teh ID selector*/
+#secondSelector {
+    letter-spacing: 1rem;
+    color: blue;
+}
+
+div[class="third-selector"]  {
+    background-color: yellow
+    }
+
+span {
+    /*block value: takes the whole horizontal space in the web page, an dplaces itmes in seperate row if multiple*/
+    display: block;
+    /*Inline value: places the items one after another in the same row*/
+    /*display: inline;*/
+    background-color: red;
+    
+}
+
+#inlineSelector {
+    color: blue;
+    display: inline;
+    background-color: yellowgreen;
+}
+
+
+#inlineConvertor {
+    background-color:green;
+    display: inline;
+}
+
+/*display type : none hides the element prom the display but that remains in the DOM*/
+
+#noneDisplay {
+    display: none;
+    background-color: red;
+}
+
