@@ -1,0 +1,178 @@
+normalize.css   : makes the browser render html elemnts smoother
+search it on internet, download the file and embed the css in html : <link rel="stylesheet" type="text/css" href="normalize.css">
+
+use google fonts from internet, select the fonts from the font family and embed teh link in html
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type="text/css">
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ffffff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+
+fluid grid: all ements are sized in relatibve units such as percentage
+flixeble images : relative size for images
+media quireies : different css styles for different browser width
+
+user responsive grid model to use Fluid grid model for website.
+http://www.responsivegridsystem.com/
+download teh grid.css and embed in the project html and apply the grid model
+
+
+inline-block : this element is kind of mix of inline and block elements. it does not force line break like block element,
+but margin and padding attributes can be assigned to these elements like Inline elements.
+
+use flat ui tool to choose the colors fro website and elements
+https://flatuicolors.com/
+
+use 0to255 website to get the shades of colors
+https://www.0to255.com/
+
+use ioicons in html for icons. use the <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> in teh head tag in last
+https://ionicons.com/
+
+
+psuedo classe:-
+link/button states : link, visited, hover, active
+link : normal state
+visited : how it looks like after it is visited.
+hover: when we hover over the button
+active : when we click on the button
+ex:   .btn:link, .btn:visited
+
+=====================================border-radius=======================================
+>> used to change the shape circular
+border-radius: 50%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+======================================== box shadow ============================
+box-shadow: 0 2px 2px rgb(175, 171, 171);
+
+=========================================background image===============================
+background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/back-customers.jpg); /* to make teh background image darker, add gradient*/
+background-size: cover; /*to make teh fill teh whole width*/
+background-attachment: fixed; /*to feel like image is fixed and web page is scrolling over*/
+
+
+========================================================== float & clearfix class =======================
+float: left; /*aligns the items next to each other*/
+whenever use float, donot forget to clear it for next element
+.clearfix:{zoom: 1;}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+=================================================================================================
+
+overflow: hidden; /*to hide the overflow behaviour of child elements.  it is to be defined in parent element */
+
+==>> transition adds animation to given css property. transition to be defined in normal state css block and transform in the other or hover css state block
+transition: transform 0.5s; /*adds teh animation of 2 seconds to transform property of hover state*/
+transform: scale(1.03); /*image will go normal;*/
+
+==>> another example of animation
+>>define in the normal state css block. bottom border initially is invisible but visible when hovers
+    border-bottom: 2px solid transparent; /*to have the border but make it invisible*/
+    transition: border-bottom 0.2s; /*to add the transition effect to teh border*/
+
+>>define in hover or active state
+    border-bottom: 2px solid #d35400; /*to have the hover effect, the border must exist before hore, 
+    but since we dont want teh border to be visible in normal case we will make it invisible (transparent full)*/
+
+==========================make image darker with opacity===========================
+1. add background color black or darker to teh container element  of teh image element
+2. add opacity to the image
+3. if needed animation can also be added to image
+
+
+.meal-photo {
+    overflow: hidden; /*to hide the overflow behaviour of child elements*/   
+    background-color: #000; /*added to support the darker background of teh image with opacity*/
+}
+
+.meal-photo img {
+    opacity: 0.7; /*70% opacity*/
+    transform: scale(1.15); /*image will be bigger 115%*/
+    transition: transform 0.5s, opacity 0.5s; /*adds teh animation of 2 seconds to transform property of hover state*/
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03); /*image will go normal;*/
+}
+============================= pseudo class ===================================================
+
+/*select the first child of teh element*/
+.steps-box:first-child {
+    margin-top: 30px;    
+}
+
+/*select the last child of teh element*/
+.steps-box:last-child {    
+}
+
+/* select the last element from teh same grouping element*/
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+*:focus {outline: none}  /*get rid of border when focus on elements*/
+
+===================    /*Secrets to align text and icons*/===========
+==> put icon and text in 1 div container
+HTML :
+    <div class="city-feature">
+        <ion-icon name="person-outline" class="icon-small"></ion-icon>
+        1200+ happy eaters
+        </div>
+css: 
+icon-small {
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px; /*negative margin takes space away*/
+}
+=================================================================
+
+    z-index: 9999;   /*defines the vertical positioning of elements*/
+
+============ sticky nav=============
+.sticky {
+    position: fixed; /*makes teh element fixed and doesnot scroll with scroll*/
+    top: 0;
+    left: 0;
+    width: 100%; }
+
+============= make element invisible===============
+.section-meals {
+    opacity: 0;
+    animation-duration: 1s: /*sets the duration for animation to take place*/
+}
+
+========= two class at the same moment=======
+.class1.class2 { /*without space*/
+
+}
+
+==============cursor pointer==================
+cursor : pointer;
+
+
+
+
+
+
+
