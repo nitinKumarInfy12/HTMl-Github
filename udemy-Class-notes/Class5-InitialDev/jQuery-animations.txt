@@ -1,0 +1,67 @@
+===================jQuery====================================
+=>put the Jquery in html body right before </body> tag
+
+=> jQuery start
+$(document).ready(function() {
+}
+
+
+=> jquery method
+addClass() , removeClass()
+
+========== navigate to a area when button clicked ====================================
+    /* Scroll on buttons */
+    $('button').click(function () {
+       $('html, body').animate({scrollTop: $('target-element').offset().top}, 1000); /*1000 ms is time here for animation*/
+    });
+
+
+========== smooth scrolling on click of link/button======================================
+=>> achieved with the help of anchors
+
+Ex; of anchor : href pointing to id of another element. 
+<a href="#features">Food delivery</a>.
+.
+.<section class="section-features js--section-features" id="features">
+
+/******* Navigation scroll *////
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+
+
+==================================animat eusing waypoint JQuery plugin and animate.css using animante <animation name>==============
+/******** Animations on scroll */
+    $('.js--wp-1').waypoint(function(direction) {
+        $('.js--wp-1').addClass('animated fadeIn');
+    }, {
+        offset: '50%'  /*offset the scroll by 50%*/
+    });
+
+==========================================opens and closes a box upon buton click============================================================
+    /* Mobile navigation */
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+        
+        nav.slideToggle(200);   /*opens and closes a box*/
+        
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        } else {
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }        
+    });
